@@ -1,0 +1,6 @@
+framework module Permission_Contacts {
+  umbrella header "Permission-Contacts-umbrella.h"
+
+  export *
+  module * { export * }
+}

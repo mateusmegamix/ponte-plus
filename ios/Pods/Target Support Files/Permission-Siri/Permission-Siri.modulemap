@@ -1,0 +1,6 @@
+framework module Permission_Siri {
+  umbrella header "Permission-Siri-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Permission_Motion {
+  umbrella header "Permission-Motion-umbrella.h"
+
+  export *
+  module * { export * }
+}

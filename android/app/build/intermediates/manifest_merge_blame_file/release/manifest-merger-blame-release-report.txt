@@ -1,0 +1,576 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pontuemeponte"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="com.pontuemeponte.permission.C2D_MESSAGE" />
+11-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:5:5-80
+11-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:7:5-68
+12-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:7:22-65
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:9:5-66
+13-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:9:22-63
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:10:5-80
+14-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:10:22-78
+15
+16    <uses-feature android:name="android.hardware.camera" />
+16-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:12:5-59
+16-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:12:19-57
+17    <uses-feature android:name="android.hardware.camera.autofocus" />
+17-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:13:5-69
+17-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:13:19-67
+18
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:14:5-79
+19-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:14:22-76
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:15:5-67
+20-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:15:22-64
+21    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+21-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:16:5-77
+21-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:16:22-75
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:17:5-65
+22-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:17:22-62
+23    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+23-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:18:5-71
+23-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:18:22-68
+24    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+24-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:19:5-80
+24-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:19:22-77
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:20:5-81
+25-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:20:22-78
+26    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+26-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:21:5-81
+26-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:21:22-78
+27    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+27-->[:react-native-community_netinfo] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:5-76
+27-->[:react-native-community_netinfo] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:22-73
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+28-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:26:22-107
+29    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+29-->[com.google.android.gms:play-services-iid:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/ddc42c4a8e55cc8b1beab0253605fb75/play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+29-->[com.google.android.gms:play-services-iid:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/ddc42c4a8e55cc8b1beab0253605fb75/play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+30    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+31    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+32    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+33    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+34    <!-- for Samsung -->
+35    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+36    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+37    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+38    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+39    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+40    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+40-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+40-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+41    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+41-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+41-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+42    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+42-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+42-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+43    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+43-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+43-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+44    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+44-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+44-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+45    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+45-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+45-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+46    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+46-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+46-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+47    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+47-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+47-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+48    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+48-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+48-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+49    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+49-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+49-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+50    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+50-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+50-->[me.leolin:ShortcutBadger:1.1.22] /Users/usuario/.gradle/caches/transforms-2/files-2.1/7b00ed9adf4e9eff36059ed591d1d915/ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+51
+52    <application
+52-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:22:5-98:19
+53        android:name="com.pontuemeponte.MainApplication"
+53-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:23:7-38
+54        android:allowBackup="false"
+54-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:26:9-36
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.5.0-alpha02] /Users/usuario/.gradle/caches/transforms-2/files-2.1/c8d24d0166b6e27fbc04ccaa768c526d/core-1.5.0-alpha02/AndroidManifest.xml:24:18-86
+56        android:icon="@drawable/icon"
+56-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:25:9-38
+57        android:label="@string/app_name"
+57-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:24:9-41
+58        android:supportsRtl="true"
+58-->[com.facebook.android:facebook-login:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/79a7c7ca0a97ee87ac4829ba61edcf99/facebook-login-7.1.0/AndroidManifest.xml:28:18-44
+59        android:theme="@style/AppTheme"
+59-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:27:9-40
+60        android:usesCleartextTraffic="true" >
+60-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:28:9-44
+61        <activity
+61-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:29:7-46:18
+62            android:name="com.pontuemeponte.MainActivity"
+62-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:30:9-37
+63            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+63-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:32:11-81
+64            android:label="@string/app_name"
+64-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:31:11-43
+65            android:screenOrientation="portrait"
+65-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:34:11-47
+66            android:windowSoftInputMode="adjustResize" >
+66-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:33:11-53
+67            <intent-filter>
+67-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:36:9-39:25
+68                <action android:name="android.intent.action.MAIN" />
+68-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:37:13-65
+68-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:37:21-62
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:38:13-73
+70-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:38:23-70
+71            </intent-filter>
+72            <intent-filter>
+72-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:40:11-45:23
+73                <action android:name="android.intent.action.VIEW" />
+73-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:41:11-63
+73-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:41:19-60
+74
+75                <category android:name="android.intent.category.DEFAULT" />
+75-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:42:11-70
+75-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:42:21-67
+76                <category android:name="android.intent.category.BROWSABLE" />
+76-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:43:11-72
+76-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:43:21-69
+77
+78                <data android:scheme="pontoplus" />
+78-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:44:11-46
+78-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:44:17-43
+79            </intent-filter>
+80        </activity>
+81        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+81-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:47:9-86
+81-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:47:19-83
+82
+83        <meta-data
+83-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:48:9-107
+84            android:name="com.facebook.sdk.ApplicationId"
+84-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:48:20-65
+85            android:value="@string/facebook_app_id" />
+85-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:48:66-105
+86        <meta-data
+86-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:50:9-51:61
+87            android:name="com.dieam.reactnativepushnotification.notification_channel_name"
+87-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:50:21-99
+88            android:value="YOUR NOTIFICATION CHANNEL NAME" />
+88-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:51:13-59
+89        <meta-data
+89-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:52:9-53:68
+90            android:name="com.dieam.reactnativepushnotification.notification_channel_description"
+90-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:52:21-106
+91            android:value="YOUR NOTIFICATION CHANNEL DESCRIPTION" />
+91-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:53:13-66
+92        <!-- Change the resource name to your App's accent color - or any other color you want -->
+93        <meta-data
+93-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:55:9-56:54
+94            android:name="com.dieam.reactnativepushnotification.notification_color"
+94-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:55:21-92
+95            android:resource="@android:color/white" />
+95-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:56:13-52
+96        <meta-data
+96-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:58:9-136
+97            android:name="com.google.firebase.messaging.default_notification_icon"
+97-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:58:20-90
+98            android:resource="@mipmap/ic_notification" />
+98-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:58:91-133
+99
+100        <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+101        <receiver
+101-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:61:9-69:20
+102            android:name="com.google.android.gms.gcm.GcmReceiver"
+102-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:62:13-66
+103            android:exported="true"
+103-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:63:13-36
+104            android:permission="com.google.android.c2dm.permission.SEND" >
+104-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:64:13-73
+105            <intent-filter>
+105-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:65:13-68:29
+106                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+106-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:66:17-81
+106-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:66:25-78
+107
+108                <category android:name="com.pontuemeponte" />
+108-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:67:27-58
+109            </intent-filter>
+110        </receiver>
+111        <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+112
+113        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+113-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:72:9-110
+113-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:72:19-107
+114        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+114-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:73:9-77:20
+114-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:73:19-115
+115            <intent-filter>
+115-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:74:13-76:29
+116                <action android:name="android.intent.action.BOOT_COMPLETED" />
+116-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:75:17-79
+116-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:75:25-76
+117            </intent-filter>
+118        </receiver>
+119
+120        <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService" />
+120-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:78:9-118
+120-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:78:18-116
+121
+122        <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+123        <!--
+124        <service
+125            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm"
+126            android:exported="false" >
+127            <intent-filter>
+128                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+129            </intent-filter>
+130        </service>
+131        -->
+132        <!-- </ Only if you're using GCM or localNotificationSchedule() > -->
+133
+134
+135        <!-- < Else > -->
+136        <service
+136-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:91:9-97:19
+137            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+137-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:92:13-107
+138            android:exported="false" >
+138-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:93:13-37
+139            <intent-filter>
+139-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:94:13-96:29
+140                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+140-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:95:17-78
+140-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:95:25-75
+141            </intent-filter>
+142        </service>
+143
+144        <receiver
+144-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:9-21:20
+145            android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver"
+145-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-70
+146            android:enabled="true"
+146-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-35
+147            android:exported="true" >
+147-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-36
+148            <intent-filter>
+148-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:13-20:29
+149                <action android:name="com.android.vending.INSTALL_REFERRER" />
+149-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:17-79
+149-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:25-76
+150            </intent-filter>
+151        </receiver>
+152
+153        <provider
+153-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:10:9-18:20
+154            android:name="com.imagepicker.FileProvider"
+154-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:13-56
+155            android:authorities="com.pontuemeponte.provider"
+155-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:13-60
+156            android:exported="false"
+156-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+157            android:grantUriPermissions="true" >
+157-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-47
+158            <meta-data
+158-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
+159                android:name="android.support.FILE_PROVIDER_PATHS"
+159-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
+160                android:resource="@xml/provider_paths" />
+160-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
+161        </provider>
+162        <provider
+162-->[:react-native-webview] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:9-20:20
+163            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+163-->[:react-native-webview] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:13:13-83
+164            android:authorities="com.pontuemeponte.fileprovider"
+164-->[:react-native-webview] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:14:13-64
+165            android:exported="false"
+165-->[:react-native-webview] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+166            android:grantUriPermissions="true" >
+166-->[:react-native-webview] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-webview/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-47
+167            <meta-data
+167-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:15:13-17:58
+168                android:name="android.support.FILE_PROVIDER_PATHS"
+168-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:16:17-67
+169                android:resource="@xml/file_provider_paths" />
+169-->[:react-native-image-picker] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:17-55
+170        </provider>
+171
+172        <activity
+172-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:30:9-33:66
+173            android:name="com.facebook.FacebookActivity"
+173-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:31:13-57
+174            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+174-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:32:13-96
+175            android:theme="@style/com_facebook_activity_theme" />
+175-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:33:13-63
+176        <activity android:name="com.facebook.CustomTabMainActivity" />
+176-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:34:9-71
+176-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:34:19-68
+177        <activity
+177-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:35:9-49:20
+178            android:name="com.facebook.CustomTabActivity"
+178-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:36:13-58
+179            android:exported="true" >
+179-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:37:13-36
+180            <intent-filter>
+180-->[com.facebook.android:facebook-common:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/266e2d77534b6dea1fb91013910f2cc9/facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+181                <action android:name="android.intent.action.VIEW" />
+181-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:41:11-63
+181-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:41:19-60
+182
+183                <category android:name="android.intent.category.DEFAULT" />
+183-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:42:11-70
+183-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:42:21-67
+184                <category android:name="android.intent.category.BROWSABLE" />
+184-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:43:11-72
+184-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:43:21-69
+185
+186                <data
+186-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:44:11-46
+187                    android:host="cct.com.pontuemeponte"
+188                    android:scheme="fbconnect" />
+188-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:44:17-43
+189            </intent-filter>
+190        </activity>
+191        <!--
+192             FirebaseMessagingService performs security checks at runtime,
+193             but set to not exported to explicitly avoid allowing another app to call it.
+194        -->
+195        <service
+195-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:28:9-35:19
+196            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+196-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:29:13-82
+197            android:directBootAware="true"
+197-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:30:13-43
+198            android:exported="false" >
+198-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:31:13-37
+199            <intent-filter android:priority="-500" >
+199-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:94:13-96:29
+200                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+200-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:95:17-78
+200-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:95:25-75
+201            </intent-filter>
+202        </service>
+203        <service
+203-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:36:9-42:19
+204            android:name="com.google.firebase.components.ComponentDiscoveryService"
+204-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:37:13-84
+205            android:directBootAware="true"
+205-->[com.google.firebase:firebase-common:19.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d0a46bbc882ac0103b50191cec37ec8b/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+206            android:exported="false" >
+206-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:38:13-37
+207            <meta-data
+207-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:39:13-41:85
+208                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+208-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:40:17-119
+209                android:value="com.google.firebase.components.ComponentRegistrar" />
+209-->[com.google.firebase:firebase-messaging:20.2.4] /Users/usuario/.gradle/caches/transforms-2/files-2.1/3604f8ee3f999d9d969db8d9fa9027cb/jetified-firebase-messaging-20.2.4/AndroidManifest.xml:41:17-82
+210            <meta-data
+210-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/cb0c36b0d550135ada5c692cf6ebaddf/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+211                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+211-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/cb0c36b0d550135ada5c692cf6ebaddf/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+212                android:value="com.google.firebase.components.ComponentRegistrar" />
+212-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/cb0c36b0d550135ada5c692cf6ebaddf/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+213            <meta-data
+213-->[com.google.android.gms:play-services-measurement-api:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d8a56afd16179c77eed19f2cba01565d/play-services-measurement-api-17.3.0/AndroidManifest.xml:30:13-32:85
+214                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+214-->[com.google.android.gms:play-services-measurement-api:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d8a56afd16179c77eed19f2cba01565d/play-services-measurement-api-17.3.0/AndroidManifest.xml:31:17-139
+215                android:value="com.google.firebase.components.ComponentRegistrar" />
+215-->[com.google.android.gms:play-services-measurement-api:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d8a56afd16179c77eed19f2cba01565d/play-services-measurement-api-17.3.0/AndroidManifest.xml:32:17-82
+216            <meta-data
+216-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:32:13-34:85
+217                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+217-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:33:17-96
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:34:17-82
+219            <meta-data
+219-->[com.google.firebase:firebase-installations:16.3.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d4c42219f181a4573f13870a1150ae31/firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+220                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+220-->[com.google.firebase:firebase-installations:16.3.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d4c42219f181a4573f13870a1150ae31/firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+221                android:value="com.google.firebase.components.ComponentRegistrar" />
+221-->[com.google.firebase:firebase-installations:16.3.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d4c42219f181a4573f13870a1150ae31/firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+222        </service>
+223        <service
+223-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/5dbe1836147ea2877d0bdb391db5ddc8/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+224            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+224-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/5dbe1836147ea2877d0bdb391db5ddc8/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+225            android:exported="false" >
+225-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/5dbe1836147ea2877d0bdb391db5ddc8/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+226            <meta-data
+226-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/5dbe1836147ea2877d0bdb391db5ddc8/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+227                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+227-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/5dbe1836147ea2877d0bdb391db5ddc8/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+228                android:value="cct" />
+228-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/5dbe1836147ea2877d0bdb391db5ddc8/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+229        </service>
+230        <service
+230-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+231            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+231-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+232            android:exported="false"
+232-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+233            android:permission="android.permission.BIND_JOB_SERVICE" >
+233-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+234        </service>
+235
+236        <receiver
+236-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+237            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+237-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+238            android:exported="false" />
+238-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/22fffcac48c95ecf54c2127a7edbe9bb/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+239        <receiver
+239-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:29:9-33:20
+240            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+240-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:30:13-85
+241            android:enabled="true"
+241-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:31:13-35
+242            android:exported="false" >
+242-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:32:13-37
+243        </receiver>
+244        <receiver
+244-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:34:9-42:20
+245            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+245-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:35:13-100
+246            android:enabled="true"
+246-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:36:13-35
+247            android:exported="true"
+247-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:37:13-36
+248            android:permission="android.permission.INSTALL_PACKAGES" >
+248-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:38:13-69
+249            <intent-filter>
+249-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:13-20:29
+250                <action android:name="com.android.vending.INSTALL_REFERRER" />
+250-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:17-79
+250-->[:react-native-device-info] /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/node_modules/react-native-device-info/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:25-76
+251            </intent-filter>
+252        </receiver>
+253
+254        <service
+254-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:44:9-47:40
+255            android:name="com.google.android.gms.measurement.AppMeasurementService"
+255-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:45:13-84
+256            android:enabled="true"
+256-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:46:13-35
+257            android:exported="false" />
+257-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:47:13-37
+258        <service
+258-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:48:9-52:72
+259            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+259-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:49:13-87
+260            android:enabled="true"
+260-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:50:13-35
+261            android:exported="false"
+261-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:51:13-37
+262            android:permission="android.permission.BIND_JOB_SERVICE" />
+262-->[com.google.android.gms:play-services-measurement:17.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/69bd73d271fafed67d1c70852f45ea49/play-services-measurement-17.3.0/AndroidManifest.xml:52:13-69
+263        <!--
+264         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+265         with the application context. This config is merged in with the host app's manifest,
+266         but there can only be one provider with the same authority activated at any given
+267         point; so if the end user has two or more different apps that use Facebook SDK, only the
+268         first one will be able to use the provider. To work around this problem, we use the
+269         following placeholder in the authority to identify each host application as if it was
+270         a completely different provider.
+271        -->
+272        <provider
+272-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:39:9-42:40
+273            android:name="com.facebook.internal.FacebookInitProvider"
+273-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:40:13-70
+274            android:authorities="com.pontuemeponte.FacebookInitProvider"
+274-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:41:13-72
+275            android:exported="false" />
+275-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:42:13-37
+276
+277        <receiver
+277-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:44:9-50:20
+278            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+278-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:45:13-86
+279            android:exported="false" >
+279-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:46:13-37
+280            <intent-filter>
+280-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:47:13-49:29
+281                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+281-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:17-95
+281-->[com.facebook.android:facebook-core:7.1.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/9206fb418c5b29bf8e20309376f512c8/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:25-92
+282            </intent-filter>
+283        </receiver>
+284        <receiver
+284-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:37:9-44:20
+285            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+285-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:38:13-78
+286            android:exported="true"
+286-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:39:13-36
+287            android:permission="com.google.android.c2dm.permission.SEND" >
+287-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:40:13-73
+288            <intent-filter>
+288-->[com.google.firebase:firebase-iid:20.2.3] /Users/usuario/.gradle/caches/transforms-2/files-2.1/a3ecc5610be2510687cd29292042985b/firebase-iid-20.2.3/AndroidManifest.xml:41:13-43:29
+289                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+289-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:66:17-81
+289-->/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/src/main/AndroidManifest.xml:66:25-78
+290            </intent-filter>
+291        </receiver>
+292
+293        <provider
+293-->[com.google.firebase:firebase-common:19.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d0a46bbc882ac0103b50191cec37ec8b/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+294            android:name="com.google.firebase.provider.FirebaseInitProvider"
+294-->[com.google.firebase:firebase-common:19.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d0a46bbc882ac0103b50191cec37ec8b/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+295            android:authorities="com.pontuemeponte.firebaseinitprovider"
+295-->[com.google.firebase:firebase-common:19.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d0a46bbc882ac0103b50191cec37ec8b/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+296            android:exported="false"
+296-->[com.google.firebase:firebase-common:19.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d0a46bbc882ac0103b50191cec37ec8b/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+297            android:initOrder="100" />
+297-->[com.google.firebase:firebase-common:19.3.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/d0a46bbc882ac0103b50191cec37ec8b/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+298
+299        <activity
+299-->[com.google.android.gms:play-services-base:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/1e54bc729e691c7dd1e0d7ba56bf1262/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+300            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+300-->[com.google.android.gms:play-services-base:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/1e54bc729e691c7dd1e0d7ba56bf1262/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+301            android:exported="false"
+301-->[com.google.android.gms:play-services-base:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/1e54bc729e691c7dd1e0d7ba56bf1262/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+302            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+302-->[com.google.android.gms:play-services-base:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/1e54bc729e691c7dd1e0d7ba56bf1262/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+303
+304        <meta-data
+304-->[com.google.android.gms:play-services-basement:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/2ba048f19ebc8e5f823a25a8d0f5f899/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+305            android:name="com.google.android.gms.version"
+305-->[com.google.android.gms:play-services-basement:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/2ba048f19ebc8e5f823a25a8d0f5f899/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+306            android:value="@integer/google_play_services_version" />
+306-->[com.google.android.gms:play-services-basement:17.0.0] /Users/usuario/.gradle/caches/transforms-2/files-2.1/2ba048f19ebc8e5f823a25a8d0f5f899/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+307    </application>
+308
+309</manifest>

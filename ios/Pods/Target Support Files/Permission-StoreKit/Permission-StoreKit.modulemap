@@ -1,0 +1,6 @@
+framework module Permission_StoreKit {
+  umbrella header "Permission-StoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

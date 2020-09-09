@@ -1,0 +1,6 @@
+framework module Permission_FaceID {
+  umbrella header "Permission-FaceID-umbrella.h"
+
+  export *
+  module * { export * }
+}

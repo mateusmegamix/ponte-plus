@@ -1,0 +1,6 @@
+framework module Permission_Reminders {
+  umbrella header "Permission-Reminders-umbrella.h"
+
+  export *
+  module * { export * }
+}

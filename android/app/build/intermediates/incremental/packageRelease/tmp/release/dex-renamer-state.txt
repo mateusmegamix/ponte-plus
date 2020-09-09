@@ -1,0 +1,7 @@
+#Wed Sep 09 10:50:02 BRT 2020
+base.0=/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes2.dex

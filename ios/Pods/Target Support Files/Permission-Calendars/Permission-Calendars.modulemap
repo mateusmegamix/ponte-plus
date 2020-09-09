@@ -1,0 +1,6 @@
+framework module Permission_Calendars {
+  umbrella header "Permission-Calendars-umbrella.h"
+
+  export *
+  module * { export * }
+}

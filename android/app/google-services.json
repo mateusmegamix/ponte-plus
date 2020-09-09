@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "791758445360",
+    "firebase_url": "https://ponte-preta-7bb50.firebaseio.com",
+    "project_id": "ponte-preta-7bb50",
+    "storage_bucket": "ponte-preta-7bb50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791758445360:android:86424d6346c77854",
+        "android_client_info": {
+          "package_name": "com.pontuemeponte"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZDd3g7dIICd6vq9DL8AeCyZURECJjITg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791758445360-u23deqcsh55gbirtue9qgorf02j740s8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "791758445360-01u3l1l9rdo826cd5q09cbprec637g87.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pontuemeponte",
+                "app_store_id": "1458531291"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

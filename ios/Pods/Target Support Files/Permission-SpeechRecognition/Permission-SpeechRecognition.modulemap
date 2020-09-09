@@ -1,0 +1,6 @@
+framework module Permission_SpeechRecognition {
+  umbrella header "Permission-SpeechRecognition-umbrella.h"
+
+  export *
+  module * { export * }
+}

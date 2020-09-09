@@ -1,0 +1,6 @@
+module Pods_pontuemePonte {
+  umbrella header "Pods-pontuemePonte-umbrella.h"
+
+  export *
+  module * { export * }
+}

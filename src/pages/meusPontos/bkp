@@ -1,0 +1,278 @@
+import React from 'react';
+import { FlatList, View, ScrollView, RefreshControl, TouchableOpacity, Text, Image, Modal } from 'react-native';
+
+import AsyncStorage from '@react-native-community/async-storage';
+import stylesMeusPontos from './stylesMeusPontos';
+import stylesExtratoPontos from './stylesExtratoPontos';
+
+import HeaderUser from '../../components/headerUser';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import DetalhesExtrato from '../extratoPontoDetalhes';
+import ListExtrato from '../../components/extrato';
+
+//redux
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Creators as ExtratoActions } from '../../store/ducks/extrato';
+import { Creators as MedalhasActions } from '../../store/ducks/medalhas';
+import { Creators as AssociadosActions } from '../../store/ducks/associado';
+
+import general from '../../config/general';
+
+const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+const DiaMes = [];
+const jsonCompleto = [];
+const DiasJsonFormatados = []
+const ListaMeses = []
+
+class meusPontos extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pageSelected: 0,
+            refreshing: false,
+            modalVisible: false,
+            meses: [],
+            ListRender: [],
+            Informacoes: [],
+        };
+    }
+
+
+	_onRefresh2 = async () => {
+        //console.log('refresh')
+        let token = await AsyncStorage.getItem("UserData");
+        this.props.getExtratoRequest(token)
+        this.props.getMedalhasRequest(token)
+        this.setState({ refreshing: false })
+	}
+    componentDidMount = async () => {
+        let token = await AsyncStorage.getItem("UserData");
+        this.props.getExtratoRequest(token)
+        this.props.getMedalhasRequest(token)
+    }
+
+    pegaDiaMes() {
+        var DiasJson = [];
+        var jsonCompleto = this.props.extrato.data;
+        for (let index = 0; index < jsonCompleto.length; index++) {
+            DiasJson.push(jsonCompleto[index].MesAnoExtenso)
+        }
+        var result = DiasJson.filter(function (item, index) {
+            return DiasJson.indexOf(item) >= index;
+        });
+        DiasJsonFormatados.push({ id: result })
+    }
+
+
+    setModalVisible(a) {
+        this.setState({
+            modalVisible: true,
+            Informacoes: a,
+        });
+
+    }
+
+    renderContainer() {
+        if (this.state.pageSelected === 0) {
+            return this.renderMeusPontos();
+        }
+        if (this.state.pageSelected === 1) {
+            return this.renderExtratoPontos();
+        }
+    }
+
+    renderMeusPontos() {
+        //console.log('caminho da pasta');
+        //console.log(general.imagemMedalha + this.props.associado.data.Categoria.Imagem)
+
+        return (
+
+
+            < View >
+                <View style={stylesMeusPontos.containerMedal}>
+
+                    <Image
+                        source={{ uri: general.imagemMedalha + this.props.associado.data.Categoria.Imagem }}
+                        style={stylesMeusPontos.medal}
+                    />
+                    <Text style={stylesMeusPontos.nivelAtual}>Nível {this.props.associado.data.Categoria.Nome}</Text>
+                    <Text style={stylesMeusPontos.titleNivel}>CONHEÇA OS NÍVEIS</Text>
+                    {
+
+                        this.props.medalhas.data.map((data, index) => {
+                            //console.log('AQUI MEDALHAS')
+                            //console.log(general.imagemMedalha + data.Imagem)
+                            return (
+                                <View style={stylesMeusPontos.item} key={index}>
+                                    <Image
+                                        source={{ uri: general.imagemMedalha + data.Imagem }}
+                                        style={stylesMeusPontos.itemMedal}
+                                    />
+                                    <Text style={stylesMeusPontos.titulo}>{data.Nome}</Text>
+                                    <Text style={stylesMeusPontos.ptsCorte}>+ {data.PontosMinimos} PTS</Text>
+                                </View>
+                            )
+                        })
+                    }
+                </View>
+            </View >
+        );
+    }
+
+    renderLista = (data) => {
+        var jsonFiltrado = this.props.extrato.data;
+        var result = jsonFiltrado.filter(obj => {
+            return obj.MesAnoExtenso === data
+        })
+        //console.log(result);
+        return (
+            <FlatList
+                data={result}
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={({ item }) =>
+                    <ListExtrato
+                        homeContext={this}
+                        data={item}
+                        navigation={this.props.navigation}
+                    />
+                }
+            />
+        )
+    }
+
+    renderExtratoPontos() {
+        this.pegaDiaMes();
+
+        return (
+            <View>
+                <View style={stylesExtratoPontos.containerExtrato}>
+                    <Text style={stylesExtratoPontos.title}>ACOMPANHE AQUI O SEU HISTÓRICO DE PONTOS QUE VOCÊ CONQUISTOU</Text>
+                    {
+                        DiasJsonFormatados[0].id.map((data, index) => {
+                            return (
+                                <View style={stylesExtratoPontos.itens} key={index}>
+                                    <Text style={stylesExtratoPontos.data}>{data}</Text>
+                                    {
+                                        this.renderLista(data)
+                                    }
+                                </View>
+                            )
+                        })
+                    }
+                    <Modal
+                        animationType="fade"
+                        transparent={true}
+                        visible={this.state.modalVisible}
+                        onRequestClose={() => {
+                            this.setState({
+                                modalVisible: false,
+                            })
+                        }}>
+                        <View>
+                            <View style={stylesExtratoPontos.bgTrasnparent}>
+                                <TouchableOpacity activeOpacity={0.8}
+                                    style={stylesExtratoPontos.btnIconClose}
+                                    onPress={() => {
+                                        this.setState({
+                                            modalVisible: false,
+                                        })
+                                    }}>
+                                    <Icon name="times" color="#000000" style={stylesExtratoPontos.iconClose} />
+                                </TouchableOpacity>
+                                <View style={stylesExtratoPontos.modalContent}>
+                                    <DetalhesExtrato
+                                        data={this.state.Informacoes}
+                                    />
+                                </View>
+
+                            </View>
+                        </View>
+                    </Modal>
+                </View>
+
+
+            </View>
+        );
+    }
+
+    render() {
+        const { navigation } = this.props;
+        return (
+
+            <View style={stylesExtratoPontos.containerFull}>
+                <HeaderUser navigation={navigation} />  
+
+                <ScrollView style={stylesMeusPontos.containerGeral}  refreshControl={
+                    <RefreshControl
+                        refreshing={this.state.refreshing}
+                        onRefresh={this._onRefresh2}
+                    />
+                }>
+                    
+                    <View style={stylesExtratoPontos.menu}>
+                        <View style={stylesExtratoPontos.container}>
+                            <TouchableOpacity
+                                activeOpacity={0.8}
+                                style={[
+                                    this.state.pageSelected == 0 ?
+                                        stylesExtratoPontos.btnDestaque : stylesExtratoPontos.btnSemDestaque]}
+                                onPress={() => { this.setState({ pageSelected: 0 }) }}                        >
+                                <Text
+                                    style={[
+                                        this.state.pageSelected == 0 ?
+                                            stylesExtratoPontos.txtDestaque : stylesExtratoPontos.txtSemDestaque]}
+                                >MEUS PONTOS</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity
+                                activeOpacity={0.8}
+                                style={[
+                                    this.state.pageSelected == 1 ?
+                                        stylesExtratoPontos.btnDestaque : stylesExtratoPontos.btnSemDestaque]}
+                                onPress={() => { this.setState({ pageSelected: 1 }) }}
+                            >
+                                <Text
+                                    style={[
+                                        this.state.pageSelected == 1 ?
+                                            stylesExtratoPontos.txtDestaque : stylesExtratoPontos.txtSemDestaque]}>
+                                    EXTRATO DE PONTOS</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                    {
+                        this.renderContainer()
+                    }
+                </ScrollView>
+            </View>
+        )
+    }
+}
+
+meusPontos.navigationOptions = {
+    tabBarLabel: 'PONTOS',
+    tabBarIcon: ({ focused, tintColor }) => (
+        focused ?
+            <Image source={require('../../assets/pontos-active.png')}
+                style={{ width: 21, height: 24 }} />
+            :
+            <Image source={require('../../assets/pontos.png')} style={{ width: 21, height: 24 }} />
+    ),
+}
+
+
+
+const mapStateToProps = state => ({
+    extrato: state.extrato,
+    medalhas: state.medalhas,
+    associado: state.associado
+});
+
+const mapDispatchToProps = dispatch =>
+    bindActionCreators({
+        ...ExtratoActions,
+        ...AssociadosActions,
+        ...MedalhasActions,
+    }, dispatch);
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(meusPontos);

@@ -1,0 +1,4 @@
+# Referenced at /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/build/intermediates/merged_manifests/release/AndroidManifest.xml:52
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/usuario/Desktop/_mateus/mobile-ponte-plus-produto-2020/android/app/build/intermediates/merged_manifests/release/AndroidManifest.xml:52
+-keep class com.pontuemeponte.MainApplication { <init>(); }

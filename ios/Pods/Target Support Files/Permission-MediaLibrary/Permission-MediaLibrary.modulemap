@@ -1,0 +1,6 @@
+framework module Permission_MediaLibrary {
+  umbrella header "Permission-MediaLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
