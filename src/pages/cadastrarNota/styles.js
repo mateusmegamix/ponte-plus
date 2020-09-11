@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
   icoBarra: {
     marginRight: 8,
     color: '#B9B9B9',
-    fontSize: 14,
+    fontSize: 18,
   },
   txtFotografar: {
     color: '#B9B9B9',
@@ -173,6 +173,7 @@ const styles = StyleSheet.create({
     color: '#B9B9B9',
     fontWeight: 'bold',
     marginLeft: 10,
+    fontSize: 16,
   },
   cameraView: {
     flex: 1,

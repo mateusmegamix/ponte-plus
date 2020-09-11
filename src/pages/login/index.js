@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   TouchableOpacity,
   Text,
@@ -27,13 +27,9 @@ import colors from '../../styles/colors';
 import images from '../../styles/images';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-// teste = () => {
-//   const [teste1, teste2] = useState(true);
+// export default function senha () => {
+//   const [seePassword, setSeePassword] = useState(true);
 // };
-
-function senha() {
-  const [seePassword, setSeePassword] = useState(true);
-}
 
 class Login extends React.Component {
   constructor(props) {
@@ -47,6 +43,7 @@ class Login extends React.Component {
       modalVisible: false,
       EmailNaoPreenchido: false,
       semconexao: false,
+      seePassword: true,
     };
     // NetInfo.getConnectionInfo().then((connectionInfo) => {
     //   //console.log('Initial, type: ' + connectionInfo.type + ', effectiveType: ' + connectionInfo.effectiveType);
@@ -102,8 +99,9 @@ class Login extends React.Component {
   }
 
   render() {
-    senha();
+    //const [seePassword, setSeePassword] = this.props;
     const {navigation, login, isFocused} = this.props;
+    //const [seePassword, setSeePassword] = useState(true);
     if (isFocused) {
       BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
     } else {
@@ -191,7 +189,7 @@ class Login extends React.Component {
                     returnKeyType="go"
                     textContentType="password"
                     onSubmitEditing={() => this.handleLogin()}
-                    secureTextEntry={seePassword}
+                    secureTextEntry={this.state.seePassword}
                     style={styles.camposInput}
                     placeholder="senha"
                     autoCapitalize="none"
@@ -204,9 +202,15 @@ class Login extends React.Component {
 
                   <TouchableOpacity
                     style={{maxWidth: 50}}
-                    onPress={() => setSeePassword(!seePassword)}>
+                    onPress={() => {
+                      if (this.state.seePassword) {
+                        this.setState({seePassword: false});
+                      } else {
+                        this.setState({seePassword: true});
+                      }
+                    }}>
                     <Icon
-                      name={seePassword ? 'eye' : 'eye-off'}
+                      name={this.state.seePassword ? 'eye' : 'eye-off'}
                       size={20}
                       color="#FFFFFF"
                       style={{position: 'relative', top: 15, right: 30}}
